@@ -25,3 +25,4 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      working-directory: rest-voice-saver
