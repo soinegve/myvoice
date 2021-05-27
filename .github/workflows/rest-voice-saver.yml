@@ -6,9 +6,11 @@ name: Java CI with Maven rest-voice-saver
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+    
+    paths:
+      - 'rest-voice-saver/*'
+ 
+ 
 jobs:
   build:
 
