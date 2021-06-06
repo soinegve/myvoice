@@ -10,4 +10,22 @@ public class ServletInitializer extends SpringBootServletInitializer {
 		return application.sources(RestVoiceRetrieverApplication.class);
 	}
 
+
+
+
+    public static void main(String[] args) {
+        SpringApplication sa = new SpringApplication(
+          WarInitializerApplication.class);
+        sa.run(args);
+    }
+
+    @RestController
+    public static class WarInitializerController {
+
+        @GetMapping("/")
+        public String handler() {
+           return "Hello"
+        }
+    }
+
 }
